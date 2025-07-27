@@ -1,155 +1,123 @@
-
 import React, { useState } from 'react';
-import { FaSearch, FaTh, FaPhone, FaChevronDown, FaCode, FaServer, FaBrain, FaMobile, FaDatabase, FaCloud, FaPalette, FaShieldAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { FaSearch, FaTh, FaPhone, FaChevronDown } from 'react-icons/fa';
 
-const Navbar = () => {
+const courseCategories = [
+  {
+    title: "Web Development",
+    duration: "8 weeks",
+    rating: "4.1",
+    learners: "91,313",
+    price: "₹4,999",
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop",
+  },
+  {
+    title: "Programming with Python",
+    duration: "6 weeks",
+    rating: "4.1",
+    learners: "73,600",
+    price: "₹3,999",
+    image: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400&h=300&fit=crop",
+  },
+  {
+    title: "Digital Marketing",
+    duration: "8 weeks",
+    rating: "4.1",
+    learners: "56,913",
+    price: "₹5,999",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
+  },
+  {
+    title: "Machine Learning",
+    duration: "6 weeks",
+    rating: "4.5",
+    learners: "28,103",
+    price: "₹6,499",
+    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=300&fit=crop",
+  },
+  {
+    title: "App Development",
+    duration: "10 weeks",
+    rating: "4.6",
+    learners: "39,000",
+    price: "₹5,499",
+    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop",
+  },
+  {
+    title: "Backend Development",
+    duration: "9 weeks",
+    rating: "4.4",
+    learners: "41,230",
+    price: "₹5,299",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop",
+  },
+];
+
+const NavBar = () => {
   const [isCoursesOpen, setIsCoursesOpen] = useState(false);
-
-  const courseCategories = [
-    {
-      title: "Web Development",
-      icon: <FaCode className="text-blue-500" />,
-      courses: [
-        "Frontend Development (React, Vue, Angular)",
-        "HTML, CSS & JavaScript Fundamentals",
-        "Responsive Web Design",
-        "Progressive Web Apps (PWA)"
-      ]
-    },
-    {
-      title: "Mobile Development",
-      icon: <FaMobile className="text-green-500" />,
-      courses: [
-        "Flutter Development",
-        "React Native",
-        "iOS Development (Swift)",
-        "Android Development (Kotlin)"
-      ]
-    },
-    {
-      title: "Backend Development",
-      icon: <FaServer className="text-purple-500" />,
-      courses: [
-        "Node.js & Express",
-        "Python Django/Flask",
-        "Java Spring Boot",
-        "PHP Laravel"
-      ]
-    },
-    {
-      title: "Artificial Intelligence",
-      icon: <FaBrain className="text-red-500" />,
-      courses: [
-        "Machine Learning Fundamentals",
-        "Deep Learning with TensorFlow",
-        "Natural Language Processing",
-        "Computer Vision"
-      ]
-    },
-    {
-      title: "Database & Cloud",
-      icon: <FaDatabase className="text-indigo-500" />,
-      courses: [
-        "SQL & Database Design",
-        "MongoDB & NoSQL",
-        "AWS Cloud Services",
-        "Docker & Kubernetes"
-      ]
-    },
-    {
-      title: "UI/UX Design",
-      icon: <FaPalette className="text-pink-500" />,
-      courses: [
-        "User Interface Design",
-        "User Experience Research",
-        "Figma & Design Tools",
-        "Design Systems"
-      ]
-    },
-    {
-      title: "Cybersecurity",
-      icon: <FaShieldAlt className="text-orange-500" />,
-      courses: [
-        "Ethical Hacking",
-        "Network Security",
-        "Web Application Security",
-        "Incident Response"
-      ]
-    },
-    {
-      title: "DevOps & Tools",
-      icon: <FaCloud className="text-teal-500" />,
-      courses: [
-        "Git & Version Control",
-        "CI/CD Pipelines",
-        "Linux System Administration",
-        "Monitoring & Logging"
-      ]
-    }
-  ];
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
       <div className="max-w-screen-xl mx-auto px-4 py-2 flex items-center justify-between">
-        
-        {/* Left: Logo */}
+        <Link to="/">
         <div className="flex items-center space-x-2">
           <div className="h-10 w-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-lg">L</span>
           </div>
           <span className="font-bold text-xl text-gray-800">LearnHub</span>
         </div>
+        </Link>
 
-        {/* Center: Courses Button & Search Bar */}
         <div className="flex items-center space-x-2 relative">
-          <div 
+          <div
             className="relative"
             onMouseEnter={() => setIsCoursesOpen(true)}
             onMouseLeave={() => setIsCoursesOpen(false)}
           >
-            <button 
-              className="bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-blue-700 transition-colors"
-            >
+            <button className="bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-blue-700 transition-colors">
               <span>Courses</span>
               <FaTh />
               <FaChevronDown className={`transition-transform ${isCoursesOpen ? 'rotate-180' : ''}`} />
             </button>
-            
-            {/* Courses Dropdown */}
+
             {isCoursesOpen && (
-              <div className="absolute top-full left-0 mt-2 w-[900px] bg-white rounded-xl shadow-2xl border border-gray-100 p-6 grid grid-cols-2 gap-6 animate-fadeIn">
+              <div className="absolute left-0 mt-2 w-[1000px] max-h-[80vh] overflow-auto bg-white rounded-3xl shadow-2xl border border-gray-200 p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 animate-fadeIn transition-all duration-300">
                 {courseCategories.map((category, index) => (
-                  <div key={index} className="space-y-3 group">
-                    <div className="flex items-center space-x-3 mb-3">
-                      <div className="p-2 rounded-lg bg-gray-50 group-hover:bg-blue-50 transition-colors">
-                        {category.icon}
+                  <div key={index} className="bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-all duration-200">
+                    <img src={category.image} alt={category.title} className="w-full h-37 object-cover rounded-t-2xl" />
+                    <div className="px-5 pb-5">
+                      <p className="text-sm text-gray-500 pt-2">{category.duration}</p>
+                      <h3 className="text-lg font-semibold text-gray-800 mb-2">{category.title}</h3>
+                      <div className="flex items-center text-sm text-gray-600 mb-2 space-x-2">
+                        <svg className="w-3 h-4 text-yellow-500" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M12 17.27L18.18 21l-1.63-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.45 4.73L5.82 21z" />
+                        </svg>
+                        <span>{category.rating}</span>
+                        <span className="text-gray-400">|</span>
+                        <span>{category.learners} learners</span>
                       </div>
-                      <h3 className="font-semibold text-gray-800 text-lg group-hover:text-blue-600 transition-colors">{category.title}</h3>
-                    </div>
-                    <div className="space-y-2">
-                      {category.courses.map((course, courseIndex) => (
-                        <a
-                          key={courseIndex}
-                          href="#"
-                          className="block w-full text-left text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 p-2 rounded-md transition-all duration-200 hover:translate-x-1"
-                        >
-                          {course}
-                        </a>
-                      ))}
+                      <div className="text-orange-600 font-medium mb-3">{category.price}</div>
+                      <Link
+                        to={`/course/${encodeURIComponent(category.title.toLowerCase().replace(/\s+/g, '-'))}`}
+                        className="text-orange-600 font-semibold text-sm flex items-center gap-1 hover:text-orange-700 transition-colors"
+                      >
+                        Know more
+                        <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+                        </svg>
+                      </Link>
                     </div>
                   </div>
                 ))}
-                
-                {/* View All Courses Button */}
-                <div className="col-span-2 pt-4 border-t border-gray-100">
-                  <button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all hover:shadow-lg">
+                <div className="col-span-full pt-4 border-t border-gray-100">
+                  <button className="w-full bg-gradient-to-r from-blue-800 to-blue-600 text-white py-3 rounded-xl font-semibold hover:from-blue-700 hover:to-purple-700 transition-all shadow-md">
                     View All Courses →
                   </button>
                 </div>
               </div>
             )}
           </div>
-          
+
           <div className="relative">
             <input
               type="text"
@@ -160,7 +128,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Right: Links & Login */}
         <div className="flex items-center space-x-4 text-sm text-gray-700">
           <a href="#" className="hover:text-blue-600 transition-colors">Jobs</a>
           <a href="#" className="hover:text-blue-600 transition-colors">Learning Resources</a>
@@ -173,26 +140,8 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-      
-      {/* Custom CSS for animations */}
-      <style jsx>{`
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(-10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        
-        .animate-fadeIn {
-          animation: fadeIn 0.3s ease-out;
-        }
-      `}</style>
     </nav>
   );
 };
 
-export default Navbar;
+export default NavBar;

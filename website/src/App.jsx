@@ -1,6 +1,8 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./page/Home";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './page/components/Layout';
+import Home from './page/Home';
+import CourseDetail from './page/CourseDetail';
 
 const NotFound = () => (
   <div className="flex items-center justify-center h-screen bg-red-50">
@@ -10,14 +12,15 @@ const NotFound = () => (
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-
-        {/* Fallback route */}
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} /> {/* Fixed: 'index' instead of 'in' */}
+          <Route path="course/:courseId" element={<CourseDetail />} />
+        </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 };
 
