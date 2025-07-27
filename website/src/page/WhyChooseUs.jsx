@@ -13,7 +13,7 @@ const WhyChooseUs = () => {
                 Why Choose Us
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Discover why over 25,000 learners have chosen us for their journey in Data Science and AI. 
+                Discover why over 2,500 learners have chosen us for their journey in Data Science, Data Analyst, Web Development, App Development, Python, Power BI and AI . 
                 With a focus on real-world applications and a global network, our tailored learning paths 
                 not only teach-they transform careers and enhance industry connections. Experience the 
                 difference with our commitment to your success and our proven track record in professional advancement.
@@ -22,20 +22,20 @@ const WhyChooseUs = () => {
               {/* Statistics Grid */}
               <div className="grid grid-cols-2 gap-6 mt-8">
                 <div className="text-center p-4 bg-gray-50 rounded-lg border-l-4 border-purple-500">
-                  <div className="text-2xl md:text-3xl font-bold text-purple-600">1000+</div>
+                  <div className="text-2xl md:text-3xl font-bold text-purple-600">12+</div>
                   <div className="text-sm text-gray-600 mt-1">Customized Courses</div>
                   <div className="text-xs text-gray-500">offerings</div>
                 </div>
                 
                 <div className="text-center p-4 bg-gray-50 rounded-lg border-l-4 border-blue-500">
-                  <div className="text-2xl md:text-3xl font-bold text-blue-600">400+</div>
-                  <div className="text-sm text-gray-600 mt-1">Corporate Partners</div>
-                  <div className="text-xs text-gray-500">satisfied clients</div>
+                  <div className="text-2xl md:text-3xl font-bold text-blue-600">2500+</div>
+                  <div className="text-sm text-gray-600 mt-1">Active Students</div>
+                  <div className="text-xs text-gray-500">satisfied Students</div>
                 </div>
                 
                 <div className="text-center p-4 bg-gray-50 rounded-lg border-l-4 border-teal-500">
-                  <div className="text-2xl md:text-3xl font-bold text-teal-600">&gt;80+</div>
-                  <div className="text-sm text-gray-600 mt-1">Course Completion</div>
+                  <div className="text-2xl md:text-3xl font-bold text-teal-600">&gt;50+</div>
+                  <div className="text-sm text-gray-600 mt-1">Batch Completion</div>
                   <div className="text-xs text-gray-500">rate</div>
                 </div>
                 

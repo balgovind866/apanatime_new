@@ -20,27 +20,25 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-slate-300 text-sm leading-relaxed">
-              ApanaTime Tech Solutions is a world pioneer training institute that has trained
-              India's leading professionals. Our curriculum is designed meticulously as per
-              the latest market trends.
+              Unlock your business potential with ApanaTime's expert web and app development, data analytics, and Power BI solutions—driving innovation, efficiency, and success for your growth.
             </p>
             {/* Social Links */}
            
               <div className="flex space-x-3 mt-6">
-              <a href="https://facebook.com" className="w-8 h-8 bg-gray-700 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors duration-300">
+              <a href="https://www.facebook.com/profile.php?id=61562874962761" className="w-8 h-8 bg-gray-700 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors duration-300">
                 <FaFacebookF size={16}  />
               </a>
-              <a href="https://twitter.com" className='w-8 h-8 bg-gray-700 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors duration-300' >
+              <a href="https://x.com/apanatime_in?t=AK1T6d3woHNJ_VFmEwgHtA&s=09" className='w-8 h-8 bg-gray-700 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors duration-300' >
                 <FaTwitter size={16}/>
               </a>
-              <a href="https://linkedin.com" className='w-8 h-8 bg-gray-700 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors duration-300'>
+              <a href="https://www.linkedin.com/company/apana-time/" className='w-8 h-8 bg-gray-700 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors duration-300'>
                 <FaLinkedinIn size={16} />
               </a>
-              <a href="https://instagram.com" className='w-8 h-8 bg-gray-700 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors duration-300'>
+              <a href="https://www.instagram.com/apanatime.in/" className='w-8 h-8 bg-gray-700 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors duration-300'>
                 <FaInstagram size={16} />
                 
               </a>
-               <a href="https://instagram.com" className='w-8 h-8 bg-gray-700 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors duration-300'>
+               <a href="https://www.youtube.com/@APANATIME-AT" className='w-8 h-8 bg-gray-700 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors duration-300'>
                 <FaYoutube size={16} />
                 
                 
@@ -66,7 +64,7 @@ const Footer = () => {
                 <div className="flex items-start space-x-3">
                  <FaMapMarker size={25} className="text-blue-400" />
                   <p className="text-gray-300 text-sm leading-relaxed">
-                    2-56/2/19, 3rd floor, Vijaya Towers, near Meridian School, Ayyappa Society Rd, Madhapur, Hyderabad, Telangana 500081
+                    Madraha Kusmaul, 2rd Floor, Main Road, Kaudi Ram, Madraha, Gorakhpur, Uttar Pradesh – 273401 India
                   </p>
                 </div>
                  <div className="flex items-center space-x-3">

@@ -16,13 +16,13 @@ const CourseDetail = () => {
       title: 'Web Development Course',
       shortDescription: 'Master full-stack web development',
       description: 'In this comprehensive web development course, you will learn modern web technologies including HTML5, CSS3, JavaScript (ES6+), React.js, Node.js, Express, and MongoDB. Build real-world projects and deploy them to production.',
-      duration: '8 weeks',
+      duration: '24 weeks',
       schedule: '1 hr/day (flexible schedule)',
       rating: '4.1',
-      students: '124,803',
+      students: '500+',
       price: '₹999',
       originalPrice: '₹4499',
-      discount: '₹111',
+      discount: '₹1000',
       languages: ['English', 'हिंदी'],
       features: [
         'Government-certified',
@@ -48,8 +48,8 @@ const CourseDetail = () => {
       ],
       prerequisites: ['Basic computer knowledge', 'No prior coding experience required'],
       instructor: {
-        name: 'Dr. Sarah Johnson',
-        bio: 'Senior Web Developer with 10+ years of experience',
+        name: 'Shivani Nagar',
+        bio: 'Senior Web Developer with 5+ years of experience',
         avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=face'
       }
     },
@@ -58,13 +58,13 @@ const CourseDetail = () => {
       title: 'Programming with Python',
       shortDescription: 'From basics to advanced Python programming',
       description: 'Master Python programming from basics to advanced concepts. Learn data structures, algorithms, web development with Django, and automation. This course will take you from zero to proficient Python developer.',
-      duration: '6 weeks',
+      duration: '24 weeks',
       schedule: '1.5 hr/day (flexible schedule)',
       rating: '4.1',
-      students: '73,600',
-      price: '₹799',
+      students: '500+',
+      price: '₹2999',
       originalPrice: '₹3999',
-      discount: '₹89',
+      discount: '₹1000',
       languages: ['English', 'हिंदी'],
       features: [
         'Government-certified',
@@ -90,23 +90,23 @@ const CourseDetail = () => {
       ],
       prerequisites: ['Basic understanding of programming concepts'],
       instructor: {
-        name: 'Michael Chen',
-        bio: 'Python expert with 8 years of teaching experience',
+        name: 'Abhishek Roy',
+        bio: 'Python expert with 3 years of teaching experience',
         avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face'
       }
     },
-    'digital-marketing': {
-      id: 'digital-marketing',
-      title: 'Digital Marketing',
-      shortDescription: 'Master digital marketing strategies',
-      description: 'Learn comprehensive digital marketing strategies including SEO, SEM, social media marketing, content marketing, and analytics. This course will prepare you for modern marketing roles with hands-on projects.',
-      duration: '8 weeks',
+    'Data Analyst': {
+      id: 'Data Analyst',
+      title: 'Data Analyst',
+      shortDescription: 'Master data analyst',
+      description: 'Learn core data analysis techniques including data cleaning, statistical analysis, data visualization, and reporting. Gain hands-on experience with tools like Excel, SQL, Python, and Power BI. This course prepares you for in-demand Data Analyst roles across industries with practical projects, real datasets, and job-focused training.',
+      duration: '24 weeks',
       schedule: '1 hr/day (flexible schedule)',
       rating: '4.1',
-      students: '56,913',
-      price: '₹1199',
-      originalPrice: '₹5999',
-      discount: '₹150',
+      students: '1500+',
+      price: '₹3999',
+      originalPrice: '₹4999',
+      discount: '₹1000',
       languages: ['English', 'हिंदी'],
       features: [
         'Government-certified',
@@ -116,24 +116,22 @@ const CourseDetail = () => {
       ],
       offer: {
         title: '1+1 Offer:',
-        description: 'Get Google Ads certification training FREE on purchase of Digital Marketing training!'
+        description: 'Get Certification Training FREE with Data Analyst Course!'
       },
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop',
       thumbnail: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop',
       modules: [
-        'Digital Marketing Fundamentals',
-        'Search Engine Optimization (SEO)',
-        'Google Ads & PPC',
-        'Social Media Marketing',
-        'Content Marketing Strategy',
-        'Email Marketing',
+        'Python',
+        'SQL',
+        'EDA',
+        'Power BI',
+        'Advance Excel',
         'Analytics & Reporting',
-        'E-commerce Marketing'
       ],
-      prerequisites: ['Basic computer skills', 'Interest in marketing'],
+      prerequisites: ['Basic computer skills', 'Interest in Data Field'],
       instructor: {
-        name: 'Priya Sharma',
-        bio: 'Digital Marketing Consultant with Fortune 500 experience',
+        name: 'Anish Kumar',
+        bio: 'Senior Data Scientist with 3+ Years Experience',
         avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b1b5?w=100&h=100&fit=crop&crop=face'
       }
     },
@@ -142,10 +140,10 @@ const CourseDetail = () => {
       title: 'Machine Learning',
       shortDescription: 'Dive into AI and machine learning',
       description: 'Master machine learning algorithms, neural networks, and AI development. Build intelligent systems and predictive models with Python. This course includes hands-on projects with real datasets.',
-      duration: '6 weeks',
+      duration: '24 weeks',
       schedule: '2 hr/day (flexible schedule)',
       rating: '4.5',
-      students: '28,103',
+      students: '1000+',
       price: '₹1499',
       originalPrice: '₹6499',
       discount: '₹200',
@@ -174,7 +172,7 @@ const CourseDetail = () => {
       ],
       prerequisites: ['Python programming', 'Basic statistics knowledge'],
       instructor: {
-        name: 'Dr. Raj Patel',
+        name: 'Anish Kumar',
         bio: 'AI Researcher with PhD in Machine Learning',
         avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face'
       }

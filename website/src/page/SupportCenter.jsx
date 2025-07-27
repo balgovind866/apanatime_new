@@ -29,7 +29,7 @@ const SupportCenter = () => {
             
                 <div className="text-sm text-gray-600 mb-6">
                 <p className="font-medium">Available from Sunday - Saturday</p>
-                <p>7:00 AM to 8:00 PM IST.</p>
+                <p>9:00 AM to 8:00 PM IST.</p>
               </div>
                <div className="text-xs text-gray-500 space-y-1">
                 <p>*Please note all calls may be recorded for quality and training purposes.</p>
@@ -51,7 +51,7 @@ const SupportCenter = () => {
                     href="support@gmail.com" 
                     className="text-xl font-semibold text-blue-600 hover:text-blue-800 transition-colors break-all"
                   >
-                   support@apanatime.in
+                   hr@apanatime.in
                   </a>
                    <div className="mt-8">
                 <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg">

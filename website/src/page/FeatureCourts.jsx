@@ -7,33 +7,33 @@ const FeaturedCoursesPage = () => {
   const courses = [
     {
       id: 1,
-      title: "Artificial Intelligence & Deep Learning Course",
-      duration: "2 Months",
-      mode: "VILT",
+      title: "Artificial Intelligence & Machine Learning Course",
+      duration: "6 Months",
+      mode: "Online",
       image: "/api/placeholder/400/250",
       gradient: "from-blue-900 to-blue-700"
     },
      {
       id: 2,
-      title: "Artificial Intelligence & Deep Learning Course",
-      duration: "2 Months",
-      mode: "VILT",
+      title: "Data Science & Data Analyst Course",
+      duration: "6 Months",
+      mode: "Online",
       image: "/api/placeholder/400/250",
       gradient: "from-blue-900 to-blue-700"
     },
     {
       id: 2,
-      title: "Generative AI and Prompt Engineering Certification Course",
+      title: "App Development Course",
       duration: "6 Months",
-      mode: "VILT",
+      mode: "Online",
       image: "/api/placeholder/400/250",
       gradient: "from-blue-800 to-blue-600"
     },
     {
       id: 3,
-      title: "Data Visualization using Tableau Training",
-      duration: "1 Month",
-      mode: "Hybrid",
+      title: "Web Development Course",
+      duration: "6 Month",
+      mode: "Online",
       image: "/api/placeholder/400/250",
       gradient: "from-blue-900 to-blue-700"
     }
@@ -69,8 +69,7 @@ const FeaturedCoursesPage = () => {
             </button>
           </div>
           <p className="text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Our specialized programs are designed to fit seamlessly into your busy schedule while advancing your career. 
-            Delve into data science and AI through courses that emphasize practical learning and industry relevance.
+            At Apana Time Tech Solutions, our specialized programs in Data Analysis, Data Science, App Development, Web Development, Python, and Power BI are designed to be flexible, practical, and aligned with current industry demands—empowering you to grow your skills and advance your career.
           </p>
         </div>
 
